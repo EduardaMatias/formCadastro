@@ -1,0 +1,173 @@
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+main{
+    display: flex;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-purple{
+    height: 100vh;
+    width: 50%;
+    background-color: #292961;
+}
+
+.color-black{
+    height: 100vh;
+    width: 50%;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.title{
+    color: #11B3DB;
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.subtitle{
+    margin-top: -5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.inputs{
+    margin-left: -3px;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 500px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+::-webkit-input-placeholder{
+    font-weight: 200;
+    color: white;
+}
+
+.inputs:focus{
+    border: none;
+    outline: none;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 500px;
+}
+
+button{
+    width: 521px;
+    height: 50px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 500px;
+    color: #fff;
+    background-color: #11B3DB;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover{
+    color: #11B3DB;
+    background-color: #fff;
+}
+
+img{
+    max-height: 500px;
+}
+
+
+@media only screen and (max-width: 1104px) {
+    img {
+        max-height: 400px;
+    }
+
+    .color-purple{
+        height: 100vh;
+        width: 60%;
+        background-color: #292961;
+    }
+
+    .color-black{
+        height: 100vh;
+        width: 40%;
+        background-color: black;
+    }
+  }
+
+  @media only screen and (max-width: 930px) {
+    img {
+        max-height: 300px;
+    }
+
+    .color-purple{
+        width: 60%;
+    }
+
+    .color-black{
+        width: 40%;
+    }
+
+    .title{
+        font-size: 30px;
+        margin-left: 0 auto;
+    }
+    
+    .subtitle{
+        font-size: 10px;
+        margin-left: 0 auto;
+    }
+
+    .inputs{
+        width: 300px;
+        margin-left: 0 auto;
+    }
+
+    button{
+        width: 317px;
+        margin-left: 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 705px) {
+    img{
+        max-height: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    .color-black{
+        display: none;
+    }
+
+    .color-purple{
+        width: 100%;
+    }
+  }
